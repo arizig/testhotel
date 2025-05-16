@@ -1,4 +1,4 @@
-const apiKey = "TA_CLE_API_ICI"; // ضع مفتاحك المجاني من api-ninjas.com
+const apiKey = "AbZ/ehRdVN3Pbl9OeWKbGA==KH7iLF2W4B4E5jFv";
 const celebsContainer = document.getElementById("celebs");
 
 const names = ["Elon Musk", "Beyoncé", "Emma Watson", "Cristiano Ronaldo"];
