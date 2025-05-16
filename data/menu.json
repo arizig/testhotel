@@ -1,0 +1,34 @@
+{
+  "plats": [
+    {
+      "nom": "Soupe Cosmique",
+      "description": "Un velouté de météorites aux herbes lunaires.",
+      "prix": 12.5,
+      "image": "https://images.unsplash.com/photo-1607277286417-45d2b6e7cc11"
+    },
+    {
+      "nom": "Burger Galactique",
+      "description": "Double steak d'astéroïde, fromage intersidéral, pain noir d'espace.",
+      "prix": 18.9,
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349"
+    },
+    {
+      "nom": "Pizza Saturnienne",
+      "description": "Garnie d'anneaux croustillants et d'olives martiennes.",
+      "prix": 16.0,
+      "image": "https://images.unsplash.com/photo-1601924582975-6e4296f2a4a6"
+    },
+    {
+      "nom": "Crème d'Étoiles",
+      "description": "Dessert glacé aux poussières d'étoiles sucrées.",
+      "prix": 8.0,
+      "image": "https://images.unsplash.com/photo-1590080877038-9ac87c7fbff8"
+    }
+  ]
+}
+
+
+
+
+
+
