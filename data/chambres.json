@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nom": "Suite Galactique",
+    "description": "Une suite spacieuse avec vue sur la Voie lactée et équipements de luxe.",
+    "prix": "350€/nuit",
+    "image": "images/suite-galactique.jpg"
+  },
+  {
+    "id": 2,
+    "nom": "Chambre Cosmos",
+    "description": "Chambre confortable avec décoration futuriste et éclairage LED ambiance.",
+    "prix": "200€/nuit",
+    "image": "images/chambre-cosmos.jpg"
+  },
+  {
+    "id": 3,
+    "nom": "Cabine Stellaire",
+    "description": "Cabine cosy avec ambiance étoilée idéale pour les aventuriers solitaires.",
+    "prix": "120€/nuit",
+    "image": "images/cabine-stellaire.jpg"
+  }
+]

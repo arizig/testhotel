@@ -1,0 +1,93 @@
+/* style.css */
+
+/* Police Orbitron déjà importée dans html */
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: url('../images/stars-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgba(11, 30, 61, 0.9);
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f9d342;
+  font-weight: bold;
+}
+
+nav a.active {
+  border-bottom: 2px solid #f9d342;
+}
+
+h1 {
+  margin: 0;
+  color: #f9d342;
+}
+
+.slogan {
+  margin: 0;
+  font-style: italic;
+  color: #d1d9e6;
+}
+
+main {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.intro {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  color: #d1d9e6;
+}
+
+.btn-reserver {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: #f9d342;
+  color: #0b1e3d;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-reserver:hover {
+  background-color: #ffd700;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: rgba(11, 30, 61, 0.9);
+  text-align: center;
+  padding: 20px;
+  color: #d1d9e6;
+}

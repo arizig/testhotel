@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Hôtel Galaxia</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hôtel Galaxia</h1>
+    <p class="slogan">Dormez parmi les étoiles</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="hebergement.html">Hébergement</a></li>
+        <li><a href="restauration.html">Restauration</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="celebrities.html">Célébrités</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Contactez-nous</h2>
+      <form class="contact-form">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required />
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hôtel Galaxia. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
