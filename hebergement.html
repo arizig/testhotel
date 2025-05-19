@@ -4,20 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hébergement - Hôtel Galaxia</title>
+
+  <!-- Lien vers la feuille de style principale -->
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Importation de la police Orbitron depuis Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
+  <!-- En-tête du site contenant le logo et le menu de navigation -->
   <header>
-    <svg width="200" height="60" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
-      <text x="0" y="50" font-family="Orbitron, sans-serif" font-size="40" fill="#f9d342">
-        Hôtel Galaxia
-      </text>
-    </svg>
+    <h1>Hôtel Galaxia</h1>
     <p class="slogan">Dormez parmi les étoiles</p>
     <nav>
       <ul>
+        <!-- Liens de navigation avec page active mise en surbrillance -->
         <li><a href="index.html">Accueil</a></li>
         <li><a href="hebergement.html" class="active">Hébergement</a></li>
         <li><a href="restauration.html">Restauration</a></li>
@@ -28,20 +29,24 @@
     </nav>
   </header>
 
+  <!-- Contenu principal de la page -->
   <main>
     <h2>Nos chambres interstellaires</h2>
-    <div id="chambres">
-      <!-- Les chambres seront chargées ici -->
-    </div>
+
+    <!-- Conteneur vide où les chambres seront insérées dynamiquement -->
+    <div id="chambres"></div>
   </main>
 
+  <!-- Pied de page avec mention de droits -->
   <footer>
     <p>&copy; 2025 Hôtel Galaxia. Tous droits réservés.</p>
   </footer>
 
+  <!-- Script JavaScript pour charger les données des chambres depuis JSON -->
   <script src="js/hebergement.js"></script>
 </body>
 </html>
+
 
 
 
