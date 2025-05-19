@@ -91,3 +91,34 @@ footer {
   padding: 20px;
   color: #d1d9e6;
 }
+
+
+/* Style pour les cartes de chambres et de services */
+.chambre {
+  background-color: rgba(255, 255, 255, 0.1); /* Fond semi-transparent élégant */
+  border-radius: 12px;                        /* Bords arrondis */
+  box-shadow: 0 0 10px rgba(249, 211, 66, 0.3); /* Légère ombre dorée */
+  padding: 20px;                              /* Espacement intérieur */
+  margin: 20px auto;                          /* Espacement vertical centré */
+  max-width: 800px;                           /* Largeur maximale */
+  text-align: left;                           /* Alignement du texte à gauche */
+}
+
+.chambre img {
+  width: 100%;                                /* Image prend toute la largeur */
+  max-height: 250px;                          /* Hauteur maximale */
+  object-fit: cover;                          /* Découpe propre de l’image */
+  border-radius: 10px;                        /* Coins arrondis pour l’image */
+  margin-bottom: 15px;                        /* Espacement en bas de l’image */
+}
+
+.chambre h3 {
+  color: #f9d342;                             /* Couleur jaune galaxie */
+  margin-bottom: 10px;                        /* Espacement sous le titre */
+}
+
+.chambre p {
+  color: #d1d9e6;                             /* Texte gris clair */
+  line-height: 1.5em;                         /* Hauteur de ligne lisible */
+  margin: 8px 0;                              /* Espacement vertical */
+}
