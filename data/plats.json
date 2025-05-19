@@ -1,0 +1,26 @@
+[
+  {
+    "nom": "Soupe de Supernova",
+    "description": "Une soupe lumineuse à base de légumes étoilés et d'épices galactiques.",
+    "prix": "18€",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
+  },
+  {
+    "nom": "Burger Astral",
+    "description": "Burger interstellaire au bœuf cométaire et fromage de lune fondue.",
+    "prix": "24€",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349"
+  },
+  {
+    "nom": "Dessert Cosmique",
+    "description": "Un assortiment de douceurs orbitales, avec glace comète et éclats d’astéroïdes.",
+    "prix": "12€",
+    "image": "https://images.unsplash.com/photo-1589308078055-ebbf5f4a15f4"
+  }
+]
+
+
+
+
+
+

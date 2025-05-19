@@ -1,21 +1,28 @@
-// restauration.js
-fetch("data/menu.json")
-  .then((response) => response.json())
-  .then((data) => {
-    const menuContainer = document.getElementById("menu");
-    data.plats.forEach((plat) => {
-      const platDiv = document.createElement("div");
-      platDiv.className = "plat";
-      platDiv.innerHTML = `
-        <img src="${plat.image}" alt="${plat.nom}" style="width:100%; border-radius:10px; margin-bottom:10px;" />
+// Chargement des données des plats depuis le fichier JSON
+fetch("data/plats.json")
+  .then(response => {
+    if (!response.ok) throw new Error("Erreur de chargement du menu");
+    return response.json();
+  })
+  .then(data => {
+    const container = document.getElementById("menu");
+
+    data.forEach(plat => {
+      const div = document.createElement("div");
+      div.className = "chambre"; // Réutilisation du style de carte
+      div.innerHTML = `
+        <img src="${plat.image}" alt="${plat.nom}" />
         <h3>${plat.nom}</h3>
         <p>${plat.description}</p>
-        <p><strong>Prix :</strong> ${plat.prix}€</p>
+        <p><strong>Prix :</strong> ${plat.prix}</p>
+        <a href="contact.html" class="btn-reserver">Commander</a>
       `;
-      menuContainer.appendChild(platDiv);
+      container.appendChild(div);
     });
   })
-  .catch((error) => {
-    console.error("Erreur lors du chargement du menu:", error);
+  .catch(error => {
+    console.error("Erreur :", error);
+    document.getElementById("menu").innerHTML =
+      "<p>Impossible de charger le menu pour le moment.</p>";
   });
 
