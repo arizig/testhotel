@@ -18,11 +18,13 @@ celebrities.forEach(name => {
       div.className = "chambre";
 
       div.innerHTML = `
-        <h3>${c.name}</h3>
-        <p><strong>Métier:</strong> ${c.occupation || "Non précisé"}</p>
-        <p><strong>Nationalité:</strong> ${c.nationality || "Inconnue"}</p>
-        <p><em>"${c.name} a adoré notre suite galactique et le spa interstellaire."</em></p>
-      `;
+  <img src="https://ui-avatars.com/api/?name=${encodeURIComponent(c.name)}&background=0D8ABC&color=fff&size=128" alt="Avatar de ${c.name}" class="avatar" />
+  <h3>${c.name}</h3>
+  <p><strong>Métier:</strong> ${c.occupation || "Non précisé"}</p>
+  <p><strong>Nationalité:</strong> ${c.nationality || "Inconnue"}</p>
+  <p><em>"${c.name} a adoré notre suite galactique et le spa interstellaire."</em></p>
+`;
+
       container.appendChild(div);
     }
   })
