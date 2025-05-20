@@ -203,3 +203,34 @@ footer {
     .hero .btn-reserver {
       margin-top: 30px;
     }
+
+    /* Style principal pour les cartes de célébrités */
+.chambre {
+  background-color: rgba(255, 255, 255, 0.1);  /* Fond semi-transparent élégant */
+  border-radius: 12px;                         /* Coins arrondis pour un style doux */
+  box-shadow: 0 0 10px rgba(249, 211, 66, 0.3); /* Ombre légère pour un effet flottant */
+  padding: 20px;                                /* Espacement intérieur */
+  margin: 20px auto;                            /* Centrage et marge verticale */
+  max-width: 800px;                             /* Largeur maximale */
+  text-align: left;                             /* Alignement du contenu à gauche */
+  overflow: hidden;                             /* Empêche le contenu de dépasser */
+}
+
+/* Style général des paragraphes à l'intérieur de la carte */
+.chambre p {
+  color: #e0ecff;                               /* Couleur claire pour une meilleure lisibilité */
+  line-height: 1.6em;                           /* Hauteur de ligne confortable */
+  margin: 10px 0;                               /* Marges entre les paragraphes */
+  word-wrap: break-word;                        /* Autoriser les retours à la ligne */
+  white-space: normal;                          /* Texte multiligne autorisé */
+}
+
+/* Style spécifique pour les commentaires (citations) des célébrités */
+.chambre p em {
+  display: block;                               /* Affichage en bloc pour séparer visuellement */
+  font-style: italic;                           /* Style italique pour l'effet citation */
+  color: #ffd700;                               /* Jaune vif pour attirer l'attention */
+  margin-top: 15px;                             /* Marge au-dessus de la citation */
+  padding-left: 10px;                           /* Décalage à gauche */
+  border-left: 3px solid #f9d342;               /* Barre verticale décorative à gauche */
+}

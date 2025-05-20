@@ -1,30 +1,33 @@
-const apiKey = "AbZ/ehRdVN3Pbl9OeWKbGA==KH7iLF2W4B4E5jFv";
-const celebsContainer = document.getElementById("celebs");
+// Liste des noms de célébrités à rechercher
+const celebrities = ["Elon Musk", "Beyoncé", "Emma Watson", "Cristiano Ronaldo"];
 
-const names = ["Elon Musk", "Beyoncé", "Emma Watson", "Cristiano Ronaldo"];
+const container = document.getElementById("celebs");
 
-names.forEach(name => {
+celebrities.forEach(name => {
   fetch(`https://api.api-ninjas.com/v1/celebrity?name=${encodeURIComponent(name)}`, {
+    method: "GET",
     headers: {
-      "X-Api-Key": apiKey
+      'X-Api-Key': 'AbZ/ehRdVN3Pbl9OeWKbGA==KH7iLF2W4B4E5jFv' // <-- Remplacez ceci par votre clé API
     }
   })
-    .then(res => res.json())
-    .then(data => {
-      if (data.length > 0) {
-        const c = data[0];
-        const div = document.createElement("div");
-        div.className = "celebrity";
-        div.innerHTML = `
-          <h3>${c.name}</h3>
-          <p><strong>Profession :</strong> ${c.occupation || "Inconnue"}</p>
-          <p><strong>Nationalité :</strong> ${c.nationality || "Inconnue"}</p>
-          <p><em>Anecdote :</em> ${c.name} a adoré notre suite orbitale avec vue sur Saturne !</p>
-        `;
-        celebsContainer.appendChild(div);
-      }
-    })
-    .catch(error => {
-      console.error("Erreur de chargement des célébrités :", error);
-    });
+  .then(response => response.json())
+  .then(data => {
+    if (data.length > 0) {
+      const c = data[0];
+      const div = document.createElement("div");
+      div.className = "chambre";
+
+      div.innerHTML = `
+        <h3>${c.name}</h3>
+        <p><strong>Métier:</strong> ${c.occupation || "Non précisé"}</p>
+        <p><strong>Nationalité:</strong> ${c.nationality || "Inconnue"}</p>
+        <p><em>"${c.name} a adoré notre suite galactique et le spa interstellaire."</em></p>
+      `;
+      container.appendChild(div);
+    }
+  })
+  .catch(error => {
+    console.error("Erreur de chargement:", error);
+  });
 });
+
