@@ -1,18 +1,18 @@
 [
   {
-    "nom": "Spa Cosmique",
-    "description": "Un espace de détente avec bains d'étoiles et soins énergétiques.",
-    "image": "https://images.unsplash.com/photo-1600305023491-870b07ed7c5c"
+    "nom": "Spa Stellaire",
+    "description": "Relaxation totale dans notre spa antigravité, avec bains de nébuleuses et massages galactiques.",
+    "image": "images/spa-futuristic.jpg"
   },
   {
-    "nom": "Salle de sport intergalactique",
-    "description": "Équipements de fitness dernier cri avec vue sur les planètes.",
-    "image": "https://images.unsplash.com/photo-1583454110558-b6b8f95c6d0e"
+    "nom": "Navette Orbitale",
+    "description": "Transferts en navette vers la station spatiale ou une promenade autour de la planète.",
+    "image": "images/space-shuttle.jpg"
   },
   {
-    "nom": "Observatoire Stellaire",
-    "description": "Admirez les constellations grâce à notre dôme équipé de télescopes.",
-    "image": "https://images.unsplash.com/photo-1549921296-3a6b053f4f62"
+    "nom": "Observatoire Cosmique",
+    "description": "Accès exclusif à notre dôme d’observation pour contempler les étoiles comme jamais auparavant.",
+    "image": "images/observatory-night.jpg"
   }
 ]
 
