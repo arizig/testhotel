@@ -112,7 +112,7 @@ footer {
   text-align: left;
   font-weight: bold;
   margin-top: 15px;
-  color: #f9d342;
+  color: #671414;
 }
 
 .contact-form input,
@@ -127,9 +127,9 @@ footer {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: 2px solid #f9d342;
+  outline: 2px solid #332b08;
   background-color: #ffffff11;
-  color: #fff;
+  color: #340a76;
 }
 
 .contact-form button {
@@ -210,7 +210,7 @@ footer {
 }
 
 .chambre p {
-  color: #d1d9e6;
+  color: #132c54;
   line-height: 1.5em;
   margin: 8px 0;
 }
@@ -257,7 +257,7 @@ footer {
 
 .celeb-card p {
   font-size: 0.95rem;
-  color: #d1d9e6;
+  color: #132c54;
   margin-bottom: 0.4rem;
 }
 
