@@ -1,6 +1,7 @@
-/* style.css */
+/* =======================
+   STYLE PRINCIPAL DU SITE
+   ======================= */
 
-/* Style général du site */
 body {
   font-family: 'Orbitron', sans-serif;
   background: url('../images/stars-bg.jpg') no-repeat center center fixed;
@@ -92,42 +93,10 @@ footer {
   color: #d1d9e6;
 }
 
-/* Style pour les cartes de chambres et de services */
-.chambre {
-  background-color: rgba(255, 255, 255, 0.1); /* Fond semi-transparent élégant */
-  border-radius: 12px;                        /* Bords arrondis */
-  box-shadow: 0 0 10px rgba(249, 211, 66, 0.3); /* Légère ombre dorée */
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  text-align: center;                         /* Centrage du contenu */
-}
+/* =======================
+   FORMULAIRE DE CONTACT
+   ======================= */
 
-/* Style pour afficher les images entièrement et sans découpe */
-.chambre img {
-  width: 100%;                      /* L'image prend toute la largeur du conteneur */
-  height: auto;                     /* La hauteur s'ajuste automatiquement */
-  object-fit: contain;              /* ✅ Affiche l'image complète sans la couper */
-  border-radius: 10px;              /* Coins arrondis */
-  margin-bottom: 15px;              /* Marge inférieure */
-  display: block;                   /* Pour supprimer l'espace blanc en bas */
-  background-color: #000;           /* Fond noir en cas de transparence */
-  max-height: none;                 /* Aucun découpage de hauteur */
-}
-
-.chambre h3 {
-  color: #f9d342;
-  margin-bottom: 10px;
-}
-
-.chambre p {
-  color: #d1d9e6;
-  line-height: 1.5em;
-  margin: 8px 0;
-}
-
-
-/* ====== Formulaire de contact ====== */
 .contact-form {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 30px;
@@ -181,59 +150,140 @@ footer {
   transform: scale(1.05);
 }
 
+/* =======================
+   SECTION HERO
+   ======================= */
 
-    .hero {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 60px 20px;
-      border-radius: 12px;
-      max-width: 800px;
-      margin: 60px auto;
-      box-shadow: 0 0 30px rgba(249, 211, 66, 0.15);
-    }
-    .hero h2 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      color: #f9d342;
-    }
-    .hero p {
-      font-size: 1.3em;
-      line-height: 1.6em;
-      color: #e0ecff;
-    }
-    .hero .btn-reserver {
-      margin-top: 30px;
-    }
+.hero {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 60px 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 60px auto;
+  box-shadow: 0 0 30px rgba(249, 211, 66, 0.15);
+}
 
-    /* Style principal pour les cartes de célébrités */
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #f9d342;
+}
+
+.hero p {
+  font-size: 1.3em;
+  line-height: 1.6em;
+  color: #e0ecff;
+}
+
+.hero .btn-reserver {
+  margin-top: 30px;
+}
+
+/* =======================
+   CARTES CHAMBRES ET SERVICES
+   ======================= */
+
 .chambre {
-  background-color: rgba(255, 255, 255, 0.1);  /* Fond semi-transparent élégant */
-  border-radius: 12px;                         /* Coins arrondis pour un style doux */
-  box-shadow: 0 0 10px rgba(249, 211, 66, 0.3); /* Ombre légère pour un effet flottant */
-  padding: 20px;                                /* Espacement intérieur */
-  margin: 20px auto;                            /* Centrage et marge verticale */
-  max-width: 800px;                             /* Largeur maximale */
-  text-align: left;                             /* Alignement du contenu à gauche */
-  overflow: hidden;                             /* Empêche le contenu de dépasser */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(249, 211, 66, 0.3);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+  overflow: hidden;
 }
 
-/* Style général des paragraphes à l'intérieur de la carte */
+.chambre img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: block;
+  background-color: #000;
+}
+
+.chambre h3 {
+  color: #f9d342;
+  margin-bottom: 10px;
+}
+
 .chambre p {
-  color: #e0ecff;                               /* Couleur claire pour une meilleure lisibilité */
-  line-height: 1.6em;                           /* Hauteur de ligne confortable */
-  margin: 10px 0;                               /* Marges entre les paragraphes */
-  word-wrap: break-word;                        /* Autoriser les retours à la ligne */
-  white-space: normal;                          /* Texte multiligne autorisé */
+  color: #d1d9e6;
+  line-height: 1.5em;
+  margin: 8px 0;
 }
 
-/* Style spécifique pour les commentaires (citations) des célébrités */
-.chambre p em {
-  display: block;                               /* Affichage en bloc pour séparer visuellement */
-  font-style: italic;                           /* Style italique pour l'effet citation */
-  color: #ffd700;                               /* Jaune vif pour attirer l'attention */
-  margin-top: 15px;                             /* Marge au-dessus de la citation */
-  padding-left: 10px;                           /* Décalage à gauche */
-  border-left: 3px solid #f9d342;               /* Barre verticale décorative à gauche */
+/* =======================
+   CÉLÉBRITÉS
+   ======================= */
+
+#celebs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
+
+.celeb-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.celeb-card:hover {
+  transform: translateY(-5px);
+}
+
+.celeb-card img.celeb-photo {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.celeb-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #f9d342;
+}
+
+.celeb-card p {
+  font-size: 0.95rem;
+  color: #d1d9e6;
+  margin-bottom: 0.4rem;
+}
+
+.celeb-card p em {
+  display: block;
+  font-style: italic;
+  color: #ffd700;
+  margin-top: 0.75rem;
+  padding-left: 10px;
+  border-left: 3px solid #f9d342;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
