@@ -93,17 +93,81 @@ footer {
   color: #d1d9e6;
 }
 
+       /* style index */
+
+    .card-section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      padding: 20px;
+    }
+
+    .info-card {
+  background-color: rgba(0, 0, 0, 0.6); 
+  border: 1px solid rgba(249, 211, 66, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(249, 211, 66, 0.4);
+  padding: 20px;
+  width: 280px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .info-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 223, 70, 0.6);  /* Effet hover renforcé */
+    }
+
+    .info-card h3 {
+      color: #f9d342;
+      margin-bottom: 10px;
+    }
+
+    .info-card p {
+  color: #ffffff;  
+}
+
+    .info-card a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #f9d342;
+      color: #0b1e3d;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .info-card a:hover {
+      background-color: #ffd700;
+    }
+
+
+    .bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.4;
+}
+
 /* =======================
    FORMULAIRE DE CONTACT
    ======================= */
 
 .contact-form {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(18, 22, 50, 0.8); /* Fond galactique */
   padding: 30px;
   border-radius: 12px;
   max-width: 600px;
   margin: 30px auto;
-  box-shadow: 0 0 15px rgba(249, 211, 66, 0.2);
+  box-shadow: 0 0 20px rgba(249, 211, 66, 0.3); /* Halo doré */
   display: flex;
   flex-direction: column;
 }
@@ -112,24 +176,31 @@ footer {
   text-align: left;
   font-weight: bold;
   margin-top: 15px;
-  color: #671414;
+  color: #f9d342; /* Jaune clair - haute visibilité */
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 10px;
+  padding: 12px;
   border-radius: 8px;
   border: none;
   margin-top: 5px;
   font-size: 1em;
   font-family: 'Orbitron', sans-serif;
+  background-color: #1a1d35; /* Bleu foncé futuriste */
+  color: #ffffff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bbb;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: 2px solid #332b08;
-  background-color: #ffffff11;
-  color: #340a76;
+  outline: 2px solid #f9d342;
+  background-color: #232847;
+  color: #ffffff;
 }
 
 .contact-form button {
@@ -149,6 +220,7 @@ footer {
   background-color: #ffd700;
   transform: scale(1.05);
 }
+
 
 /* =======================
    SECTION HERO
@@ -178,6 +250,8 @@ footer {
 .hero .btn-reserver {
   margin-top: 30px;
 }
+
+
 
 /* =======================
    CARTES CHAMBRES ET SERVICES

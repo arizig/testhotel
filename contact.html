@@ -26,7 +26,8 @@
   <main>
     <section>
       <h2>Contactez-nous</h2>
-      <form class="contact-form">
+      <!-- Formulaire de contact fonctionnel avec Formspree -->
+      <form action="https://formspree.io/f/xbloeozg" method="POST" class="contact-form" id="formulaire">
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom" required />
 
@@ -37,12 +38,53 @@
         <textarea id="message" name="message" rows="5" required></textarea>
 
         <button type="submit">Envoyer</button>
+
+        <!-- Message de confirmation -->
+        <p id="confirmation" style="display:none; font-weight: bold; margin-top: 20px;"></p>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Hôtel Galaxia.Nassima mehdi & MOHAMED ALI Adil-Tous droits réservés.</p>
+    <p>&copy; 2025 Hôtel Galaxia. Tous droits réservés.</p>
   </footer>
+
+  <!-- Script JS pour envoyer le formulaire et afficher un message de confirmation -->
+  <script>
+    const form = document.getElementById('formulaire');
+    const confirmation = document.getElementById('confirmation');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Empêche l'envoi automatique du formulaire
+
+      const formData = new FormData(form); // Récupère les données du formulaire
+
+      // Envoie des données vers Formspree avec fetch
+      fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          confirmation.textContent = "✅ Merci ! Votre message a été envoyé avec succès.";
+          confirmation.style.color = "#90ee90";
+          confirmation.style.display = 'block';
+          form.reset(); // Réinitialise le formulaire
+        } else {
+          confirmation.textContent = "❌ Une erreur s'est produite. Réessayez.";
+          confirmation.style.color = "#f99";
+          confirmation.style.display = 'block';
+        }
+      })
+      .catch(error => {
+        confirmation.textContent = "❌ Une erreur s'est produite.";
+        confirmation.style.color = "#f99";
+        confirmation.style.display = 'block';
+      });
+    });
+  </script>
 </body>
 </html>
